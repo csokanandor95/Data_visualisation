@@ -5,8 +5,14 @@ import matplotlib.pyplot as plt
 plt.style.use('seaborn-v0_8')
 fig,ax = plt.subplots()
 
-# plot or style individual point by scatter()
-ax.scatter(2,4,s=200) # s = size of data point
+# plot or style individual points by scatter() = pontdiagram
+#ax.scatter(2,4,s=200) # s = size of data point
+
+# plotting series of points with scatter()
+x_values = [1,2,3,4,5]
+y_values = [1,4,9,16,25]
+
+ax.scatter(x_values, y_values, s=100)
 
 # set chart title and label axes
 ax.set_title("Square Numbers", fontsize=24)
