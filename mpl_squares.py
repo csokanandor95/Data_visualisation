@@ -5,6 +5,7 @@ squares = [1,4,9,16,25]
 
 # fig is the entire figure
 # ax is a single plot in the figure - used mostly for customizing
+plt.style.use('dark_background')
 fig, ax = plt.subplots() # this function generates plots in the same figure
 ax.plot(input_values, squares, linewidth=3) # plot method tries to plot the data given
 
