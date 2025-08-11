@@ -12,7 +12,8 @@ fig,ax = plt.subplots()
 x_values = range(1, 1001)
 y_values = [x**2 for x in x_values]
 
-ax.scatter(x_values, y_values, s=10)
+# adding colormap instead of a color or rgb code
+ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, s=10)
 
 # set chart title and label axes
 ax.set_title("Square Numbers", fontsize=24)
@@ -24,5 +25,9 @@ ax.tick_params(labelsize=14)
 
 #set the range for each axis
 ax.axis([0, 1100, 0, 1_000_000])
+ax.ticklabel_format(style='plain') # can be other e.g. scientific (default)
 
 plt.show()
+
+# can also save plots
+plt.savefig('squares_plt.png', bbox_inches='tight')
