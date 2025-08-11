@@ -27,7 +27,5 @@ ax.tick_params(labelsize=14)
 ax.axis([0, 1100, 0, 1_000_000])
 ax.ticklabel_format(style='plain') # can be other e.g. scientific (default)
 
-plt.show()
-
-# can also save plots
-plt.savefig('squares_plt.png', bbox_inches='tight')
+# can also save plots and delet extra whitespace with bbox_inches='tight'
+plt.savefig('squares_plt.png')
