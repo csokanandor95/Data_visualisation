@@ -8,15 +8,15 @@ while True:
 
     # make a random walk
 
-    rw = RandomWalk()
+    rw = RandomWalk(50_000)
     rw.fill_walk()
 
     # plot the points in the walk
     plt.style.use('classic')
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(16, 9), dpi=128) # set to screen size
     point_numbers = range(rw.num_points)
 
-    ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=15)
+    ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=1)
     ax.set_aspect('equal') # both axes have equal spacing between tick marks
 
     # emphasize the first and last points
