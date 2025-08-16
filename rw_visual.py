@@ -21,7 +21,7 @@ while True:
 
     # emphasize the first and last points
 
-    ax.plot(0, 0, c='green', edgecolors='none', linewidth=10 s=100) # starting point in green
+    ax.plot(0, 0, c='green', edgecolors='none', linewidth=10, s=100) # starting point in green
     ax.plot(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=100) # ending point in green
 
     # remove axes
