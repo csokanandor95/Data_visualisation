@@ -1,2 +1,2 @@
 # Data_visualisation
-Matplotlib, CSV, random walk & real-world data analysis. / Matplotlib, CSV, Zufallssimulationen & Analyse realer Datensätze.
+Matplotlib, Plotly, CSV, JSON, random walk & real-world data analysis (weather and earthquake). / Matplotlib, Plotly, CSV, JSON, Zufallssimulationen & Analyse realer Datensätze (Wetter und Erdbeben).
